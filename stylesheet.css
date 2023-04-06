@@ -1,3 +1,9 @@
+:root {
+    --silk:#fff;
+    --body: linear-gradient(to top, #330867, 50% #30cfd0 0%);
+    --blackbody: background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,22 +14,28 @@ html {
 }
 
 body{
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-image: var(--blackbody);
+ 
+}
+#main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-section {
-    height: 100vh;
+
+section, .container {
+    max-width: 900vw;
     margin: 0 auto;
+    padding: 0 20px;
 }
 section h2 {
-    
+    color: var(--silk)
 }
 
 section p {
-  color: #fff;
+  color: var(--silk);
   font-size: medium;
 
 }
