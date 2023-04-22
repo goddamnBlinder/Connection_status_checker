@@ -3,6 +3,9 @@
     --body: linear-gradient(to top, #330867, 50% #30cfd0 0%);
     --blackbody:linear-gradient(to right, #434343 0%, black 100%);
     --alt:#330867;
+    --default: linear-gradient(to left, #b08bb8, 23% , #4341b0 );
+    --online: linear-gradient(to right, #42da48 45%, #14ae72 55% );
+    --offline: linear-gradient (to right,#94897f 65%, #0d2a37 35%);
 }
 
 *{
@@ -28,7 +31,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--alt)
+    background: var(--default);
 }
 .container{
     text-align: center;
