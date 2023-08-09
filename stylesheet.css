@@ -52,3 +52,10 @@ section p {
   font-size: medium;
 
 }
+.status{
+    background-color:  #7f70b7;
+    color: #434343;
+    width: 100vw;
+    height: 2px;
+
+}

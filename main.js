@@ -28,7 +28,7 @@ function checkBrand(vehicle){
 console.log(car);
 
 
-for(const i = 0; i < 100; i++){
+for(let i = 4; i <= 100; i++){
   console.log(i);
 }
 
