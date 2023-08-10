@@ -53,9 +53,19 @@ section p {
 
 }
 .status{
-    background-color:  #7f70b7;
-    color: #434343;
-    width: 100vw;
-    height: 2px;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.status-offline {
+    width: 100%;
+    max-height: 4rem;
+    background-color:#0d2a37;
+    color: #f0f6d8;
+    margin: auto 23px;
+
+}
+
+.status-online{
 
 }
