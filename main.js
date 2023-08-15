@@ -19,16 +19,4 @@ async function statusDisplay (){
   statusState.textContent 
 }
 
-let car = checkBrand("porche");
-
-function checkBrand(vehicle){
-  return vehicle === "Mercedes"? true : false
-}
-
-console.log(car);
-
-
-for(let i = 4; i <= 100; i++){
-  console.log(i);
-}
 

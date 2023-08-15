@@ -51,31 +51,34 @@ section p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: crimson;
+    z-index: 1;
+    overflow: auto ; 
+}
+.status_container{
+    margin: 44px 12px ;
+    background-color: transparent;
+    box-shadow: 3px 1px 3px 1px #0d2a37;
+    border-radius: 3px;
+    color: #fff;
     height: 3rem;
-    width: 15rem;
-    padding-left: 5rem;
-    margin: 0 34rem;
+    width: 60rem;   
+    text-align: center;
+    padding-top: 10px;
+    animation: pop ease-in 7s reverse;
 
 
-    
-    
 }
 .status-offline {
- 
-
+ display: none;
 }
 
 .status-online{
-display: ;
+ display: block;
 }
 
 @keyframes pop {
     0%{
-        transform: translateY(-30rem)
-    }
-     50%{
-        transform: translateY(-15rem)
+        transform: translateY(-3rem)
     }
 
     100%{
