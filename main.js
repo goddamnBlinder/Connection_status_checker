@@ -12,9 +12,6 @@ window.addEventListener("offline", (event)=>{
   statusState.textContent = "Offline"
 })
 
-const statusState = document.querySelector(".status");
-var image = document.querySelector("#img");
-
 async function statusDisplay (){
   statusState.textContent 
 }

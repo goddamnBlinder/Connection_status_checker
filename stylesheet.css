@@ -14,7 +14,9 @@
     box-sizing: border-box;
 }
 html {
-    font-size: .9rem;
+    font-size: 2.9rem;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
 
 }
 
@@ -52,7 +54,7 @@ section p {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    overflow: auto ; 
+
 }
 .status_container{
     margin: 44px 12px ;
@@ -69,16 +71,16 @@ section p {
 
 }
 .status-offline {
- display: none;
+ display: block;
 }
 
 .status-online{
- display: block;
+ display: none;
 }
 
 @keyframes pop {
     0%{
-        transform: translateY(-3rem)
+        transform: translateY(-.3rem)
     }
 
     100%{
