@@ -70,8 +70,13 @@ section p {
 
 
 }
+.status-pending {
+    display: block;
+}
+
 .status-offline {
  display: none;
+
 }
 
 .status-online{
