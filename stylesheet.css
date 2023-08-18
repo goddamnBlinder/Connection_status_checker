@@ -71,7 +71,7 @@ section p {
 
 }
 .status-offline {
- display: block;
+ display: none;
 }
 
 .status-online{
