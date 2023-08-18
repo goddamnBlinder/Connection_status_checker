@@ -11,8 +11,8 @@ async function connectionStatus(){
       return fetchResult.status >= 200 && fetchResult.status < 300
     } catch (error) {
       console.log("connection is down");
-      disconnected.textContent = disconnected.style.display = 'block';
-      Pending.textContent = Pending.style.display = 'none';
+      Pending.style.display = 'none';
+      disconnected.style.display = 'block';
       
   }
   
@@ -23,20 +23,20 @@ async function connectionStatus(){
 setInterval(async() => {
   const result = await connectionStatus();
   if (result) {
-    connected.textContent = connected.style.display = 'block';
-    Pending.textContent = Pending.style.display = 'none';
+    Pending.style.display = 'none';
+    connected.style.display = 'block';
   }
-}, 5000); 
+}, 1000); 
 
 
 //CHecks the connection when the page Loads
 window.addEventListener("load", async (event) => {
   if(connectionStatus()) {
-    connected.textcontent = connected.style.display = 'block';
-    Pending.textContent = Pending.style.display = 'none';
+    Pending.style.display = 'none';
+    connected.style.display = 'block';
   } else{
-    disconnected.textContent = disconnected.style.display = 'block';
-    Pending.textContent = Pending.style.display = 'none';
+    Pending.style.display = 'none';
+    disconnected.style.display = 'block';
     
   }
 })
