@@ -22,8 +22,8 @@ async function connectionStatus(){
 setInterval(async() => {
   const result = await connectionStatus();
   if (result) {
-    Pending.style.display = 'none';
-    connected.style.display = 'block';
+    Pending.textContent = 'You are now connected';
+
   }
 }, 1000); 
 
@@ -31,11 +31,10 @@ setInterval(async() => {
 //CHecks the connection when the page Loads
 window.addEventListener("load", async (event) => {
   if(connectionStatus()) {
-    Pending.style.display = 'none';
-    connected.style.display = 'block';
-  } else{
-    Pending.style.display = 'none';
-    disconnected.style.display = 'block';
+    Pending.textContent = 'You are now connected';
     
+  } else{
+    Pending.textContent = 'You are currently Offline';
+   
   }
 })
