@@ -10,8 +10,8 @@ async function connectionStatus(){
       return fetchResult.status >= 200 && fetchResult.status < 300
     } catch (error) {
       console.log("connection is down");
-      Pending.style.display = 'none';
-      disconnected.style.display = 'block';
+      Pending.textContent = 'you are currently Offline';
+     
       
   }
   
